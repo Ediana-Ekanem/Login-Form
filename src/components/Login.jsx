@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Login() {
+function Login({ darkMode }) {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -42,7 +42,9 @@ function Login() {
   return (
     <div className="flex h-screen items-center justify-center ">
       <div
-        className="container  shadow-lg rounded py-5"
+        className={`container  shadow-lg rounded py-5 ${
+          darkMode ? "border border-5 border-white  text-white " : ""
+        }`}
         style={{ width: "500px" }}
       >
         <div className="flex justify-center">

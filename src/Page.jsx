@@ -23,10 +23,10 @@ function Page() {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? "bg-black text-white " : "bg-white text-black"
+        darkMode ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
-      <Login />
+      <Login darkMode={darkMode} />
 
       <div
         className="flex justify-center items-center text-7xl"
